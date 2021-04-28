@@ -1,0 +1,16 @@
+{
+  "name": "sigle-page-aplication-rick-and-morty-api",
+  "version": "1.0.0",
+  "description": "Single page aplication",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "api",
+    "single",
+    "page", "javascript"
+  ],
+  "author": "Daniel Briceño <daniel.b100726@gmail.com>",
+  "license": "MIT"
+}
