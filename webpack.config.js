@@ -13,10 +13,10 @@ module.exports = {//objeto donde va a vivir nuestra configuración
     module: {
         rules: [
             {
-                test: /\,js? $/,
+                test: /\,js?$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"
+                    loader: "babel-loader",
                 }
             }
         ]
