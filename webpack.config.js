@@ -22,12 +22,12 @@ module.exports = {//objeto donde va a vivir nuestra configuración
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin([
+        new HtmlWebpackPlugin(
             {
                 inject: true,
                 template: "./public/index.html",
-                filename: "./index.html"
+                filename: "./index.html",
             }
-        ])
+        ),
     ]
 }
