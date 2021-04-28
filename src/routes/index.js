@@ -16,6 +16,10 @@ const router = async () => {
     const Content = null || document.getElementById("content")
 
     Header.innerHTML = await header()
+    let hash = getHash()
+    let route = await resolveRoutes(hash)
+    let render = routes[route] ? routes[route] : error404 //si obtenemos routes[route], es decir existe una ruta, la mostramos, si no, mostramos el Error404
+    Content.innerHTML = await render()
 }
 
 export default router
