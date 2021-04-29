@@ -7,7 +7,7 @@ const getData = async (id) => {
         const data = await response.json()
         return data
     } catch(error) {
-        console.error("Fetch Error", error.message)
+        console.error("Fetch Error", error)
     }
 }
 
