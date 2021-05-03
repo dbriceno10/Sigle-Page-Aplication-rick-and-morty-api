@@ -1,7 +1,7 @@
 language: node_js
 cache:
   directories:
-    - ˜/.npm:
+    - ~/.npm
     node_js:
     -"14.16.0"
 git:
