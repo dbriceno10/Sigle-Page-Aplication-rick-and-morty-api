@@ -3,7 +3,7 @@ cache:
   directories:
     - ˜/.npm:
     node_js:
-    -"14"
+    -"14.16.0"
 git:
   depth: 3
 scripth:
