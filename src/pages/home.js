@@ -1,12 +1,18 @@
 import getData from "../utils/getData"
+import getHash from "../utils/getHash"
 const home = async () => {
-    const characters = await getData()
+    const page = await getHash()
+    //localStorage.setItem("page", page)
+    console.log("página actual " + page)
+    //const item = localStorage.getItem("page")
+    const characters = await getData(page)
+    console.log(characters)
     const view = `
         <div class="characters">
             ${characters.results.map(character => `
                 <article class="character-item">
                     <a href="#/${character.id}/">
-                        <img src="${character.image}" alt="${character.name}" tittle="${character.name}">
+                        <img src="${character.image}" alt="${character.name}" tittle="name:${character.name} id:${character.id}">
                         <h2>${character.name}</h2>
                     </a>
                 </article>
