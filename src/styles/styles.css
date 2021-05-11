@@ -1,21 +1,57 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #3c484e;
     font-family: 'Open Sans', sans-serif;
+} */
+
+:root {
+    --fount-blue: #00a5be;
+    --brown-input: #685128;
+    --red-circle: #F7391C;
+    --fount-soft-blue:  #048ea3;
 }
 
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--fount-soft-blue);
+}
+
+a {
+    text-decoration: none;
+}
 .header-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-    .Header a {
+.header-main h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.header-nav a:hover {
+    color: white;
+}
+
+    /* .Header a {
     text-decoration: none;
     color: #15302C;
-}
+} */
 
 .Main {
     padding: 10px;
@@ -91,11 +127,44 @@ body {
     justify-content: space-between;
 }
 
-.characters-item a {
-text-decoration: none;
-color: #026C86;
+.characters .characters-item a {
+    text-decoration: none;
+/* color: #026C86; */
+}
+.perfil-image {
+    border: none;
+    border-radius: 20%;
 }
 
+.perfil-image:hover {
+    opacity: 90%;
+}
+.perfil-name {
+    /* text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: var(--brown-input); */
+    /* width: 100%; */
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--brown-input);
+    /* display: inline-block; */
+    color: white;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255);
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.perfil-name:hover {
+    /* padding: 15px; */
+    opacity: 90%;
+}
 @keyframes fade {
     from {
         opacity: 0;
@@ -117,4 +186,28 @@ color: #026C86;
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* .Footer-pages {
+
+} */
+
+footer {
+    margin: 0 auto;
+}
+
+.page-target {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: var(--red-circle) underline;
+}
+
+.ancla {
+    color: black;
+    font-size: 1.2rem;
+    padding: 3px;
+}
+
+.ancla:hover {
+    color: white;
 }

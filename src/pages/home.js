@@ -12,8 +12,8 @@ const home = async () => {
             ${characters.results.map(character => `
                 <article class="character-item">
                     <a href="#/${character.id}/">
-                        <img src="${character.image}" alt="${character.name}" tittle="name:${character.name} id:${character.id}">
-                        <h2>${character.name}</h2>
+                        <img class="perfil-image" src="${character.image}" alt="${character.name}" tittle="name:${character.name} id:${character.id}">
+                        <h2 class="perfil-name" >${character.name}</h2>
                     </a>
                 </article>
             `).join("")}

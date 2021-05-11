@@ -8,14 +8,14 @@ const footer = async () => {
     }
     let count = 0
     const view = `
-        <div class"Footer-pages">
-            <h4>Pages</h4>
+        <footer class"Footer-pages">
+            <h4 class="page-target">Pages</h4>
             <div>
                 ${pg.map(() => 
-                    `<a href="#/?page=${++count}">${count}${" "}</a>`
+                    `<a class="ancla" href="#/?page=${++count}">${count}${" "}</a>`
                 ).join("")}
             </div>
-        </div>
+        </footer>
     `
     return view
 }
