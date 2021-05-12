@@ -1,7 +1,7 @@
 const error404 = () => {
     const view = `
-    <div class="eror404">
-        <h2>Error404</h2>
+    <div class="error404">
+        <img src="/assets/images/error404.jpg" alt="Error404" tittle="Error404">
     </div>
     `
     return view

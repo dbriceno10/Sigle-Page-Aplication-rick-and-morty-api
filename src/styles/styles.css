@@ -17,6 +17,7 @@ html {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "DM sans", sans-serif;
 }
 
 body {
@@ -35,13 +36,17 @@ a {
 .header-main h1 a {
     color: white;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+.header-main h1 a span {
+    margin: 0 auto;
 }
 
 .header-nav a {
     text-decoration: none;
     color: black;
     font-size: 1.8rem;
+    font-family: "Inter", sans-serif;
 }
 
 .header-nav a:hover {
@@ -87,20 +92,36 @@ a {
 .characters-card img {
     width: 100%;
     height: auto;
-    border-radius: 5px 5px 0 0;
+    /* border-radius: 5px 5px 0 0; */
+    border-radius: 20%;
 }
 
 .characters-card h2 {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: bold;
     text-align: center;
+    background-color: var(--brown-input);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255);
+    color: white;
+    border-radius: 10px;
 }
 
 .characters-card h3 {
-    font-size: 18px;
+    font-size: 1.4rem;
     font-weight: 400;
     text-align: left;
     margin: 20px;
+    background-color: var(--brown-input);
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+
 }
 
 .characters-item {
@@ -129,7 +150,7 @@ a {
 
 .characters .characters-item a {
     text-decoration: none;
-/* color: #026C86; */
+    /* color: #026C86; */
 }
 .perfil-image {
     border: none;
@@ -176,7 +197,8 @@ a {
 
 .Main-loading {
     border: 4px solid #f3f3f3;
-    border-top: 4px solid #3498db;
+    /* border-top: 4px solid #3498db; */
+    border-top: 4px solid var(--fount-soft-blue);
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -192,11 +214,16 @@ a {
 
 } */
 
+.error404 img {
+    width: 500px;
+}
+
 footer {
     margin: 0 auto;
 }
 
 .page-target {
+    font-family: "Inter", sans-serif;
     color: white;
     font-size: 1.8rem;
     text-decoration: var(--red-circle) underline;
@@ -205,9 +232,15 @@ footer {
 .ancla {
     color: black;
     font-size: 1.2rem;
-    padding: 3px;
+    /* padding: 2px; */
+    justify-content: space-around;
+    font-family: "Inter", sans-serif;
 }
 
 .ancla:hover {
     color: white;
+}
+
+.Bold {
+    font-weight: bold;
 }
